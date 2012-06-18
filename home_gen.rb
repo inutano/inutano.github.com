@@ -7,7 +7,7 @@ require "fileutils"
 
 def template_init
   template = open("./template.haml").read
-  Haml::Engine.new(template).render
+  Haml::Engine.new(template, { :format => :html5 }).render
 end
 
 if __FILE__ == $0

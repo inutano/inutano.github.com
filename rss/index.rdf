@@ -7,13 +7,13 @@
         rel="self" type="application/rss+xml" />
   <description>RDF kills you</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 30 Jun 2012 20:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 30 Jun 2012 20:30:00 +0900</lastBuildDate>
   <item>
     <title>RSS test</title>
     <link>http://inutano.github.com/</link>
     <guid>http://inutano.github.com/</guid>
-    <pubDate>Sat, 30 Jun 2012 20:00:00 +0900</pubDate>
-    <description><![CDATA[<h1>test</h1><p>RSS test</p>]]</description>
+    <pubDate>Sat, 30 Jun 2012 20:30:00 +0900</pubDate>
+    <description><![CDATA[<h1>test</h1><p>RSS test</p>]]></description>
   </item>
 </channel>
 </rss>

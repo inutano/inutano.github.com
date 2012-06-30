@@ -9,11 +9,11 @@
   <language>ja</language>
   <lastBuildDate>Sat, 30 Jun 2012 20:30:00 +0900</lastBuildDate>
   <item>
-    <title>RSS test</title>
+    <title>handmade yellow RSS</title>
     <link>http://inutano.github.com/</link>
     <guid>http://inutano.github.com/</guid>
     <pubDate>Sat, 30 Jun 2012 20:30:00 +0900</pubDate>
-    <description><![CDATA[<h1>test</h1><p>RSS test</p>]]></description>
+    <description><![CDATA[<h1>NOW IMPLEMENTING</h1><p>I am writing code to generate rdf file for rss feed, but it's full of markup language. seriously boring. gimme a beer to make this up.</p>]]></description>
   </item>
 </channel>
 </rss>

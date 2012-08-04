@@ -10,19 +10,69 @@ def template_init
   Haml::Engine.new(template, { :format => :html5 }).render
 end
 
-if __FILE__ == $0
-  new_text = open(ARGV.first).read
-  new_text_html = BlueCloth.new(new_text).to_html
-  new_article = "<article>" + new_text_html + "</article>"
+class Articolo
+  def initialize(testo)
+    @testo = testo
+  end
   
-  home = "./index.html"
-  template =  File.exist?(home) ? open(home).read : template_init
+  def al_html
+    BlueCloth.new(@testo).to_html
+  end
+  
+  def titlo
+    linea_prima = @testo.split("\n").first
+    linea_prima.gsub(/^\#+\s/,"")
+  end
+  
+  def id
+    self.titlo.gsub("\s","_")
+  end
+  
+  def link
+    base = "http://inutano.github.com/\#"
+    base + self.id
+  end
+  
+  def autori(autoro="tazro inutano")
+    autoro
+  end
+  
+  def created_at
+    Time.now
+  end
+  
+  def article_tagged
+    "<article id='#{self.id}'>" + self.al_html + "</article>"
+  end
+  
+  def testo_per_rss
+    html = self.al_html
+    testo_array = html.split("\n")
+    titolo = testo_array.shift
+    "<![CDATA[" + testo_array.join("\n") + "]]"
+  end
+end
+
+if __FILE__ == $0
+  new_text = File.read(ARGV.first)
+  articolo = Articolo.new(new_text)
+  
+  home = "./test.html"
+  template = File.exist?(home) ? open(home).read : template_init
   
   nkgr = Nokogiri::HTML(template)
   entries_posted = nkgr.css("article").to_html
-  added = new_article + "\n" + entries_posted
+  added = articolo.article_tagged + "\n" + entries_posted
   
   updated = template_init.gsub("REPLACE HERE",added)
   FileUtils.mv(home,"#{home}.#{Time.now.strftime("%Y%m%d%H%M%S")}") if File.exist?(home)
   open(home,"w"){|f| f.puts(updated) }
+  
+  # RSS
+  rss_template = open("./rss.haml").read
+  engine = Haml::Engine.new(rss_template)
+  rss_text = engine.render(articolo)
+  rdf = "./rss/index.rdf"
+  FileUtils.mv(rdf, "./rss/#{rdf}.#{Time.now.strftime("%Y%m%d%H%M%S")}") if File.exist?(rdf)
+  open(rdf,"w"){|f| f.puts(rss_text) }
 end

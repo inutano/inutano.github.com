@@ -1,19 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>handmade yellow</title>
-  <link>http://inutano.github.com</link>
-  <atom:link href="http://inutano.github.com/rss/index.rss"
-        rel="self" type="application/rss+xml" />
-  <description>RDF kills you</description>
-  <language>ja</language>
-  <lastBuildDate>Sat, 30 Jun 2012 20:30:00 +0900</lastBuildDate>
-  <item>
-    <title>handmade yellow RSS</title>
-    <link>http://inutano.github.com/</link>
-    <guid>http://inutano.github.com/</guid>
-    <pubDate>Sat, 30 Jun 2012 20:30:00 +0900</pubDate>
-    <description><![CDATA[<h1>NOW IMPLEMENTING</h1><p>I am writing code to generate rdf file for rss feed, but it's full of markup language. seriously boring. gimme a beer to make this up.</p>]]></description>
-  </item>
-</channel>
+<?xml version='1.0' encoding='utf-8' ?>
+<rss version='2.0'>
+  <channel>
+    <title>handmade yellow</title>
+    <link>http://inutano.github.com</link>
+    <description>RDF kills you</description>
+    <language>ja</language>
+    <pubDate>2012-08-17 15:19:58 +0900</pubDate>
+    <item>
+      <title>Sinatra</title>
+      <link>http://inutano.github.com/#Sinatra</link>
+      <guid>Sinatra</guid>
+      <author>tazro inutano</author>
+      <pubDate>2012-08-17 15:19:58 +0900</pubDate>
+      <description>
+        <![CDATA[
+        <p>出掛ける用事があったので昼食は適当に済ませようと思っていたのだが言問通りを登り切ったあたりでふとシナトラの炒飯が食べたくなったので昼食はシナトラの炒飯を食べることにした。何気なく思い出したのだが思い出すと無性に食べたくなるのがシナトラの炒飯である。久しくシナトラの炒飯を食べていなかったので期待に胸が躍った。酷く暑くシナトラの炒飯が食べたい昼のことである。</p>
+        
+        <p>シナトラの炒飯というのはシナトラという店で供される炒飯である。シナトラとは志那虎という屋号のラーメン屋である。東京都文京区の弥生農業大学の近くにあるシナトラというラーメン屋は古く小さな店でどちらかというと中華料理店のような店構えである。実際にかつては中華料理店であったとのことである。しかし店主が無類のラーメン好きであるためラーメン屋に業態を改めシナトラというラーメン屋になったそうである。だが残念なことにラーメンはどこにでもありそうな普通の醤油とんこつラーメンであり特に美味しいと思ったことがない。その代わりに炒飯は抜群に美味い。シナトラの炒飯は抜群に美味いのである。そこらの中華料理店の炒飯よりもシナトラというラーメン屋の炒飯は美味いのである。何しろ元は中華料理店である。しかしシナトラはラーメン屋である。炒飯だけを頼むのは失礼ではないだろうかと恐縮しラーメン半チャーセットをいつも頼むのである。炒飯半ラーメンセットがあればいいのにと思いながらいつも喰う。いっそのことラーメン屋でなく中華料理店のままであればよかったのにと思いながらシナトラの炒飯をおれはいつも喰うのである。</p>
+        
+        <p>シナトラというラーメン屋は跡形なく消えていた。かつてシナトラというラーメン屋が存在したはずの場所には新しく綺麗な建物が建っており小汚い中華料理店のような店構えのシナトラというラーメン屋は消えていた。おれは憤慨した。おれはシナトラの炒飯が食べたいのである。おれは別にラーメンを食べたいとは思っていなかった。ラーメンを食べたいとは思わなかったがシナトラの炒飯はどうしても食べたかったのである。百歩譲ってラーメン屋が潰れるのはいい。ラーメンを食べたいとは思っていないからだ。だがシナトラの炒飯は大変美味しかったのでシナトラというラーメン屋は潰れてもらっては困るのだ。もうシナトラの炒飯を食べることはできない。おれは途方に暮れた。</p>
+        
+        <p>シナトラの炒飯が食べたいと思いながらしばらく歩いておれは道に迷った。</p>]]
+      </description>
+    </item>
+  </channel>
 </rss>

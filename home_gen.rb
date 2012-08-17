@@ -57,7 +57,7 @@ if __FILE__ == $0
   new_text = File.read(ARGV.first)
   articolo = Articolo.new(new_text)
   
-  home = "./test.html"
+  home = "./index.html"
   template = File.exist?(home) ? open(home).read : template_init
   
   nkgr = Nokogiri::HTML(template)
@@ -73,6 +73,6 @@ if __FILE__ == $0
   engine = Haml::Engine.new(rss_template)
   rss_text = engine.render(articolo)
   rdf = "./rss/index.rdf"
-  FileUtils.mv(rdf, "./rss/#{rdf}.#{Time.now.strftime("%Y%m%d%H%M%S")}") if File.exist?(rdf)
+  FileUtils.mv(rdf, "#{rdf}.#{Time.now.strftime("%Y%m%d%H%M%S")}") if File.exist?(rdf)
   open(rdf,"w"){|f| f.puts(rss_text) }
 end

@@ -65,7 +65,7 @@ if __FILE__ == $0
   added = articolo.article_tagged + "\n" + entries_posted
   
   updated = template_init.gsub("REPLACE HERE",added)
-  FileUtils.mv(home,"#{home}.#{Time.now.strftime("%Y%m%d%H%M%S")}") if File.exist?(home)
+  FileUtils.mv(home,"./prev_index/#{home}.#{Time.now.strftime("%Y%m%d%H%M%S")}") if File.exist?(home)
   open(home,"w"){|f| f.puts(updated) }
   
   # RSS

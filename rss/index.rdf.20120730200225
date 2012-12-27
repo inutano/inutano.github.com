@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>handmade yellow</title>
+  <link>http://inutano.github.com</link>
+  <atom:link href="http://inutano.github.com/rss/index.rss"
+        rel="self" type="application/rss+xml" />
+  <description>RDF kills you</description>
+  <language>ja</language>
+  <lastBuildDate>Sat, 30 Jun 2012 20:30:00 +0900</lastBuildDate>
+  <item>
+    <title>handmade yellow RSS</title>
+    <link>http://inutano.github.com/</link>
+    <guid>http://inutano.github.com/</guid>
+    <pubDate>Sat, 30 Jun 2012 20:30:00 +0900</pubDate>
+    <description><![CDATA[<h1>NOW IMPLEMENTING</h1><p>I am writing code to generate rdf file for rss feed, but it's full of markup language. seriously boring. gimme a beer to make this up.</p>]]></description>
+  </item>
+</channel>
+</rss>

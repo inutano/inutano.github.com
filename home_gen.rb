@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 require "haml"
-require "bluecloth"
+require "bluefeather"
 require "nokogiri"
 require "fileutils"
 
@@ -16,7 +16,7 @@ class Articolo
   end
   
   def al_html
-    BlueCloth.new(@testo).to_html
+    BlueFeather.parse(@testo)
   end
   
   def titlo
